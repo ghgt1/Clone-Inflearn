@@ -1,0 +1,13 @@
+header {
+  .first-header {
+    display: flex;
+    svg {
+      margin-right: 4px;
+    }
+    a {
+      color: #1b1c1d;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+}

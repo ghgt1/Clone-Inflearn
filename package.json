@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ghgt1/KDT3-M1-inflearn#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.55.0"
   }
 }
