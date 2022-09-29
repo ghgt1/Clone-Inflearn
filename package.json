@@ -1,0 +1,24 @@
+{
+  "name": "kdt3-m1-inflearn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghgt1/KDT3-M1-inflearn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghgt1/KDT3-M1-inflearn/issues"
+  },
+  "homepage": "https://github.com/ghgt1/KDT3-M1-inflearn#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
