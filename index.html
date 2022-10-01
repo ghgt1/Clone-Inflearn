@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>인프런 - 미래의 동료들과 함께 성장하는 곳 | IT 정보 플랫폼</title>
+    <!-- reset css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
+    <!-- font cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -16,7 +18,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.scss" />
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./main.js"></script>
   </head>
   <body>
     <header>
@@ -162,12 +173,11 @@
       <div class="right-container">
         <div class="search">
           <input type="text" />
-					<a href="/">
-						<span class="search-icon"
-							><i class="fa-solid fa-magnifying-glass"></i>
-							</i>
-						</span>
-					</a>
+          <a href="/">
+            <span class="search-icon"
+              ><i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </a>
         </div>
         <div class="buttons">
           <a href="/">로그인</a>
@@ -175,5 +185,99 @@
         </div>
       </div>
     </nav>
+    <section class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide btn1">
+            <div class="left-container">
+              <h1>뭘 들어야 하지? 🤔 나에게 딱 맞는 입문 강의</h1>
+              <p>어디서부터 시작해야 할지 모르는 당신을 위한 입문 강의</p>
+            </div>
+            <div class="right-container">
+              <a href="javascript:void(0)" class="btn"
+                ><img src="./images/banner2.png" alt="왕초보 모여라"
+              /></a>
+            </div>
+          </div>
+          <div class="swiper-slide btn2">
+            <div class="left-container">
+              <h1>왕초보를 위한 Lv. 1 인프런 로드맵 📖</h1>
+              <p>인프런이 처음이라면, 길라잡이가 되어드릴게요.</p>
+            </div>
+            <div class="right-container">
+              <a href="javascript:void(0)" class="btn">
+                <img src="./images/banner4.gif" alt="top50" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide btn3">
+            <div class="left-container">
+              <h1>무슨 강의 들을지 고민이라면? 현직자 Top 50 먼저 보기 👀</h1>
+              <p>입문부터 실전까지! 믿고 보는 실무자 Pick</p>
+            </div>
+            <div class="right-container">
+              <a href="javascript:void(0)" class="btn">
+                <img src="./images/banner3.gif" alt="입문 로드맵" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide btn4">
+            <div class="left-container">
+              <h1 style="color: #ffffff">나만 몰랐었던 이 강의~♬</h1>
+              <p style="color: #ffffff">
+                매일 업데이트 되는 인프런 신규강의를 만나보세요!
+              </p>
+            </div>
+            <div class="right-container">
+              <a href="javascript:void(0)" class="btn">
+                <img src="./images/banner5.gif" alt="지식공유신청" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide btn5">
+            <div class="left-container">
+              <h1 style="color: #ffffff">나누는 지식만큼 커지는 보람과 보상</h1>
+              <p style="color: #ffffff">
+                인프런 지식공유자로 높은 수익과 가치를 만들어보세요.
+              </p>
+            </div>
+            <div class="right-container">
+              <a href="javascript:void(0)" class="btn">
+                <img src="./images/banner6.gif" alt="신규강의" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide btn6">
+            <div class="left-container">
+              <h1 style="color: #ffffff">
+                우리는 성장기회의 평등을 추구합니다.
+              </h1>
+              <p style="color: #ffffff">
+                누구나 배움의 기회를 누리고 꿈을 이룰 수 있도록! 인프런과 함께
+                배우고, 나누고, 성장하세요.
+              </p>
+            </div>
+            <div class="right-container">
+              <a href="javascript:void(0)" class="btn">
+                <img src="./images/banner7.gif" alt="인프런동료찾기" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide btn7">
+            <div class="left-container">
+              <h1 style="color: #ffffff">함께 성장할 동료를 찾아요 🌿</h1>
+              <p style="color: #ffffff">
+                #우리 #함께성장해요 #동료여어디계신가요?
+              </p>
+            </div>
+            <div class="right-container">
+              <a href="javascript:void(0)" class="btn">
+                <img src="./images/banner1.png" alt="인프런은" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
