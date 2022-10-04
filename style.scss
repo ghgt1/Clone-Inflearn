@@ -81,7 +81,7 @@ nav {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 5;
   .left-container {
     display: flex;
     height: 100%;
@@ -128,7 +128,7 @@ nav {
           font-size: 16px;
           vertical-align: top;
           position: relative;
-          z-index: 99;
+          z-index: 9;
         }
         > li:hover > .menu2 {
           display: block;
@@ -207,17 +207,19 @@ nav {
     }
   }
 }
+
 // swiper banner
 .banner {
-  position: relative;
+  position: absolute;
+  height: 320px;
   .swiper-container {
     width: 100vw;
     height: 320px;
     background-color: $inflearn-color;
     text-align: right;
-    position: absolute;
+    // position: relative;
     left: 50%;
-    margin-left: -768px;
+    // margin-left: calc((100vw) / -2);
     font-size: 200px;
     .swiper-wrapper {
       img {
@@ -252,7 +254,7 @@ nav {
         align-content: center;
         justify-content: center;
         width: 306px;
-        height: 320px;
+        // height: 320px;
         margin-bottom: 8px;
         margin-left: 160px;
         h1 {
@@ -267,6 +269,33 @@ nav {
           line-height: 1.6;
           font-weight: 300;
         }
+      }
+    }
+  }
+  .pagination-container {
+    border-bottom: 1px solid #e9ecef;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 160px;
+    .swiper-page-controler {
+      width: 103px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      padding: 0 16px;
+      color: white;
+      justify-content: space-around;
+      button {
+        color: #fff;
+        padding: 0;
+        background: none;
+        border: 0;
+        cursor: pointer;
       }
     }
   }
