@@ -13,9 +13,22 @@ var mySwiper = new Swiper(".banner .swiper-container", {
     prevEl: ".banner .swiper-prev",
     nextEl: ".banner .swiper-next",
   },
+  slidesPerView: 1,
+  centeredSlides: true,
 });
-const btn_start = document.querySelector(".swiper-start");
-const btn_pause = document.querySelector(".swiper-pause");
+
+var lectureSwiper = new Swiper(".free-lecture .swiper-container", {
+  navigation: {
+    prevEl: ".free-lecture .swiper-prev",
+    nextEl: ".free-lecture .swiper-next",
+  },
+  slidesPerView: 5,
+  spaceBetween: 10,
+  slidesPerGroup: 5,
+});
+
+const btn_start = document.querySelector(".pagination-container .swiper-start");
+const btn_pause = document.querySelector(".pagination-container .swiper-pause");
 
 btn_start.addEventListener("click", function () {
   mySwiper.autoplay.start();
