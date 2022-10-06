@@ -482,6 +482,35 @@ nav {
               }
             }
           }
+          .course-def:hover > .swiper-hover {
+            display: block;
+            padding: 12px;
+            box-sizing: border-box;
+          }
+          .course-def {
+            position: relative;
+            .swiper-hover {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.8);
+              color: #fff;
+              font-size: 13px;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
+              margin: auto;
+              padding: 0;
+              display: none;
+              p {
+                font-size: 15.2px;
+                line-height: 1.25;
+                margin: 0 0 4px;
+                font-weight: 700;
+              }
+            }
+          }
         }
         .pagination-container {
           .swiper-page-controler {
