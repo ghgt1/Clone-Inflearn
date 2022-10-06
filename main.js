@@ -17,10 +17,19 @@ var mySwiper = new Swiper(".banner .swiper-container", {
   centeredSlides: true,
 });
 
-var lectureSwiper = new Swiper(".free-lecture .swiper-container", {
+var free_lectureSwiper = new Swiper(".free-lecture .swiper-container", {
   navigation: {
     prevEl: ".free-lecture .swiper-prev",
     nextEl: ".free-lecture .swiper-next",
+  },
+  slidesPerView: 5,
+  spaceBetween: 10,
+  slidesPerGroup: 5,
+});
+var easy_lectureSwiper = new Swiper(".easy-lecture .swiper-container", {
+  navigation: {
+    prevEl: ".easy-lecture .swiper-prev",
+    nextEl: ".easy-lecture .swiper-next",
   },
   slidesPerView: 5,
   spaceBetween: 10,

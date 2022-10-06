@@ -398,25 +398,30 @@ nav {
 }
 
 //강의목록. 1. 무료강의
-.free-lecture {
+.free-lecture,
+.easy-lecture {
   height: 408px;
   padding: 24px 0;
-  .free-container {
+  .free-container,
+  .easy-container {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
-    .free-header {
+    .free-header,
+    .easy-header {
       margin-bottom: 16px;
       a {
         text-decoration: none;
       }
-      .free-title {
+      .free-title,
+      .easy-title {
         color: #1e1e1e;
         font-size: 24px;
         line-height: 1.5;
         font-weight: 600;
       }
-      .free-subtext {
+      .free-subtext,
+      .easy-subtext {
         margin-top: 4px;
         font-weight: 400;
         color: #757575;
@@ -432,7 +437,7 @@ nav {
           width: 100%;
         }
         .swiper-slide {
-          // width: 231px !important;
+          // width: 232px !important;
           margin-right: 6px;
           a {
             text-decoration: none;
@@ -455,7 +460,14 @@ nav {
             }
             .slide-price {
               color: #175cbe;
+              display: flex;
               font-weight: 700;
+              del {
+                font-size: 14.4px;
+                color: #595959;
+                font-weight: 500;
+                margin-right: 4px;
+              }
             }
             .slide-tags {
               padding-top: 8px;
@@ -472,7 +484,7 @@ nav {
                 display: flex;
                 align-items: center;
               }
-              .tag:first-child {
+              .tag:not(:last-child) {
                 padding: 0 9px;
                 margin: 0 8px 8px 0;
               }
