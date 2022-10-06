@@ -301,6 +301,15 @@ nav {
         border: 0;
         cursor: pointer;
       }
+      .swiper-start {
+        position: relative;
+        display: none;
+        left: 7px;
+      }
+      .swiper-pause {
+        position: relative;
+        right: 9px;
+      }
     }
     .divider {
       margin: 0 16px;

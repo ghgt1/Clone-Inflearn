@@ -41,9 +41,13 @@ const btn_pause = document.querySelector(".pagination-container .swiper-pause");
 
 btn_start.addEventListener("click", function () {
   mySwiper.autoplay.start();
+  btn_start.style.display = "none";
+  btn_pause.style.display = "block";
 });
 btn_pause.addEventListener("click", function () {
   mySwiper.autoplay.stop();
+  btn_start.style.display = "block";
+  btn_pause.style.display = "none";
 });
 
 const spanEls = document.querySelectorAll(
