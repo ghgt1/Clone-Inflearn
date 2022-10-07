@@ -35,6 +35,15 @@ var easy_lectureSwiper = new Swiper(".easy-lecture .swiper-container", {
   spaceBetween: 10,
   slidesPerGroup: 5,
 });
+var roadmap_lectureSwiper = new Swiper(".roadmap .swiper-container", {
+  navigation: {
+    prevEl: ".roadmap .swiper-prev",
+    nextEl: ".roadmap .swiper-next",
+  },
+  slidesPerView: 4,
+  spaceBetween: 8,
+  slidesPerGroup: 4,
+});
 
 const btn_start = document.querySelector(".pagination-container .swiper-start");
 const btn_pause = document.querySelector(".pagination-container .swiper-pause");

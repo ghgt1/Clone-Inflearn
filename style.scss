@@ -408,38 +408,87 @@ nav {
 
 //강의목록. 1. 무료강의
 .free-lecture,
-.easy-lecture {
+.easy-lecture,
+.roadmap,
+.readable {
   height: 408px;
   padding: 24px 0;
   .free-container,
-  .easy-container {
+  .easy-container,
+  .roadmap-container,
+  .readable-container {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     .free-header,
-    .easy-header {
+    .easy-header,
+    .roadmap-header,
+    .readable-header {
       margin-bottom: 16px;
       a {
         text-decoration: none;
       }
       .free-title,
-      .easy-title {
+      .easy-title,
+      .roadmap-title,
+      .readable-title {
         color: #1e1e1e;
         font-size: 24px;
         line-height: 1.5;
         font-weight: 600;
       }
       .free-subtext,
-      .easy-subtext {
+      .easy-subtext,
+      .roadmap-subtext {
         margin-top: 4px;
         font-weight: 400;
         color: #757575;
         font-size: 15px;
       }
     }
-    .lecture-list {
+    .readable-list {
+      display: flex;
+      // padding: 10px;
+      .readable-slide {
+        margin: 2px;
+        a > img {
+          width: 376.025px;
+          height: 196.65px;
+        }
+      }
+      .readable-slide:not(:first-child) {
+        margin: 2px 2px 2px 20px;
+      }
+    }
+    .lecture-list,
+    .readable-list {
       height: 328px;
       // margin: 0 30px;
+      .readable-slide {
+        a {
+          text-decoration: none;
+        }
+        .slide-content {
+          width: 376px;
+          .slide-title {
+            font-size: 18px;
+            margin: 0 0 4px;
+            line-height: 1.5;
+            font-weight: 600;
+            height: 27px;
+            overflow: hidden;
+            color: #333333;
+            margin-bottom: 4px;
+          }
+          .slide-description {
+            height: 48px;
+            color: #595959;
+            overflow: hidden;
+            font-weight: 400;
+            line-height: 1.5;
+          }
+        }
+      }
       .swiper-container {
         width: 100%;
         .swiper-wrapper {
@@ -462,6 +511,7 @@ nav {
               overflow: hidden;
               color: black;
               height: 48px;
+              // padding: 24px;
             }
             .slide-instructor {
               color: #7d7d7d;
@@ -573,6 +623,22 @@ nav {
           }
         }
       }
+    }
+  }
+}
+.roadmap {
+  height: 340.21px;
+  .roadmap-container {
+    .slide-title {
+      font-size: 15.2px;
+      padding: 24px;
+    }
+    .lecture-list {
+      height: 260.21px;
+    }
+    .lecture-list .swiper-container .swiper-slide a > img {
+      width: 290.5px;
+      height: 152.51px;
     }
   }
 }
