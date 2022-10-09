@@ -3,6 +3,7 @@
 var mySwiper = new Swiper(".banner .swiper-container", {
   loop: true,
   autoplay: {
+    disableOnInteraction: false,
     delay: 5000,
   },
   pagination: {
@@ -15,6 +16,12 @@ var mySwiper = new Swiper(".banner .swiper-container", {
   },
   slidesPerView: 1,
   centeredSlides: true,
+});
+
+var spanIndex = document.querySelector(".current-index");
+
+mySwiper.on("transitionStart", function () {
+  spanIndex.textContent = mySwiper.realIndex + 1;
 });
 
 var free_lectureSwiper = new Swiper(".free-lecture .swiper-container", {

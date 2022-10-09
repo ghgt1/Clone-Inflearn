@@ -281,9 +281,10 @@ nav {
     height: 64px;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 160px;
     .swiper-page-controler {
-      width: 103px;
+      width: 135px;
       height: 36px;
       display: flex;
       justify-content: center;
@@ -295,11 +296,13 @@ nav {
       color: white;
       justify-content: space-around;
       button {
+        position: relative;
         color: #fff;
         padding: 0;
         background: none;
         border: 0;
         cursor: pointer;
+        top: 1px;
       }
       .swiper-start {
         position: relative;
@@ -308,7 +311,7 @@ nav {
       }
       .swiper-pause {
         position: relative;
-        right: 9px;
+        right: 5px;
       }
     }
     .divider {
@@ -321,6 +324,7 @@ nav {
       position: static;
       display: flex;
       align-items: center;
+      justify-content: center;
       .swiper-pagination-bullet {
         padding: 0 16px;
         // width: 80px;
@@ -462,26 +466,26 @@ nav {
     }
     .lecture-list,
     .readable-list {
-      height: 328px;
+      max-height: 328px;
       // margin: 0 30px;
       .readable-slide {
         a {
           text-decoration: none;
         }
         .slide-content {
-          width: 376px;
+          max-width: 376px;
           .slide-title {
             font-size: 18px;
             margin: 0 0 4px;
             line-height: 1.5;
             font-weight: 600;
-            height: 27px;
+            max-height: 27px;
             overflow: hidden;
             color: #333333;
             margin-bottom: 4px;
           }
           .slide-description {
-            height: 48px;
+            max-height: 48px;
             color: #595959;
             overflow: hidden;
             font-weight: 400;
