@@ -51,6 +51,15 @@ var roadmap_lectureSwiper = new Swiper(".roadmap .swiper-container", {
   spaceBetween: 8,
   slidesPerGroup: 4,
 });
+var new_lectureSwiper = new Swiper(".new-lecture .swiper-container", {
+  navigation: {
+    prevEl: ".new-lecture .swiper-prev",
+    nextEl: ".new-lecture .swiper-next",
+  },
+  slidesPerView: 5,
+  spaceBetween: 10,
+  slidesPerGroup: 5,
+});
 
 const btn_start = document.querySelector(".pagination-container .swiper-start");
 const btn_pause = document.querySelector(".pagination-container .swiper-pause");
@@ -82,3 +91,13 @@ for (let i = 0; i < spanEls.length; i++) {
   let item = spanEls.item(i);
   item.textContent = spanList[i];
 }
+
+var review_Swiper = new Swiper(".review-banner .swiper-container", {
+  direction: "vertical",
+  loop: true,
+  autoHeight: true,
+  mousewheel: true,
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  loopAdditionalSlides: 1,
+});

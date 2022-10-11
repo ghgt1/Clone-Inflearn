@@ -414,20 +414,23 @@ nav {
 .free-lecture,
 .easy-lecture,
 .roadmap,
-.readable {
+.readable,
+.new-lecture {
   height: 408px;
   padding: 24px 0;
   .free-container,
   .easy-container,
   .roadmap-container,
-  .readable-container {
+  .readable-container,
+  .new-container {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     .free-header,
     .easy-header,
     .roadmap-header,
-    .readable-header {
+    .readable-header,
+    .new-header {
       margin-bottom: 16px;
       a {
         text-decoration: none;
@@ -435,7 +438,8 @@ nav {
       .free-title,
       .easy-title,
       .roadmap-title,
-      .readable-title {
+      .readable-title,
+      .new-title {
         color: #1e1e1e;
         font-size: 24px;
         line-height: 1.5;
@@ -501,12 +505,30 @@ nav {
         .swiper-slide {
           // width: 232px !important;
           margin-right: 6px;
+          position: relative;
           a {
             text-decoration: none;
           }
           a > img {
             width: 231px;
             height: 151px;
+          }
+          .course-sale {
+            position: absolute;
+            top: 5%;
+            right: 0;
+            height: 21px;
+            background-color: #ff6318;
+            color: #ffffff;
+            padding: 2px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            border: 1px solid #fff;
+            font-weight: 700;
+            font-size: 14px;
+            border-right: none;
+            display: flex;
+            align-items: center;
           }
           .slide-content {
             .slide-title {
@@ -643,6 +665,105 @@ nav {
     .lecture-list .swiper-container .swiper-slide a > img {
       width: 290.5px;
       height: 152.51px;
+    }
+  }
+}
+
+// 하단 review banner
+.review-banner {
+  height: 480px;
+  padding: 24px 0;
+  .banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .left-banner {
+      max-width: 480px;
+      padding: 40px 16px 40px 0;
+      .banner-title {
+        margin-bottom: 20px;
+        line-height: 1.33;
+        font-weight: 700;
+        font-size: 36px;
+        color: #242424;
+        .inflearn-members {
+          color: #47c880;
+        }
+      }
+      .banner-description {
+        margin-bottom: 36px;
+        color: #757575;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      .buttons {
+        a {
+          text-decoration: none;
+          color: #333333;
+          margin: 0 8px 8px 0;
+          padding: 10px 16px;
+          border-radius: 3px;
+          border: 1px solid #1dc078;
+        }
+      }
+    }
+    .right-banner {
+      .swiper-container {
+        height: 480px;
+        position: relative;
+        overflow: hidden;
+        .swiper-wrapper {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          .swiper-slide {
+            height: auto;
+            width: 548px;
+            background-color: #f9f9f9;
+            margin: 5px 5px 20px 5px;
+            padding: 16px;
+            border-radius: 4px;
+            color: #333;
+            flex-shrink: 0;
+            box-shadow: 0 2px 3px rgb(0 10 18 / 10%),
+              0 0 0 1px rgb(0 10 18 / 10%);
+            line-height: 1.5;
+            font-weight: 400;
+            .banner-def {
+              .banner-title {
+                display: flex;
+                margin-bottom: 16px;
+                .title-id {
+                  font-size: 15px;
+                  color: #757570;
+                }
+                .title-time {
+                  font-size: 14px;
+                  color: #979797;
+                }
+              }
+              .review-description {
+                a {
+                  text-decoration: none;
+                }
+                h1 {
+                  color: #333333;
+                  font-size: 18px;
+                  line-height: 1.5;
+                  font-weight: 700;
+                }
+                p {
+                  font-weight: 400;
+                  line-height: 1.5;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
