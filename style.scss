@@ -668,7 +668,9 @@ nav {
     }
   }
 }
-
+.new-lecture {
+  box-sizing: border-box;
+}
 // 하단 review banner
 .review-banner {
   height: 480px;
@@ -764,6 +766,132 @@ nav {
           }
         }
       }
+    }
+  }
+}
+
+//마지막 배너
+.donate {
+  max-width: 100vw;
+  height: 172px;
+  overflow: hidden;
+  .donate-container {
+    position: relative;
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      .swiper-wrapper {
+        .swiper-slide {
+          position: relative;
+          padding: 45px 0;
+          width: 100%;
+          height: 172px;
+          .container {
+            margin: 0 160px;
+            .description {
+              margin-bottom: 40px;
+              h1 {
+                font-size: 18px;
+                line-height: 0.5;
+                color: #404040;
+              }
+            }
+            .confirm-button {
+              a {
+                padding: 12px 16px;
+                text-decoration: none;
+                color: #1dc078;
+                background: #ffffff;
+                font-weight: 700;
+                border-radius: 4px;
+                box-shadow: none;
+              }
+            }
+          }
+        }
+        .btn1 {
+          background-image: url(./images/donate-1.jpg);
+        }
+        .btn2 {
+          background-image: url(./images/donate-2.jpg);
+        }
+        .btn3 {
+          background-image: url(./images/donate-3.jpg);
+          .description h1 {
+            color: #ffffff !important;
+          }
+        }
+      }
+    }
+    .pagination-container {
+      position: absolute;
+      right: 160px;
+      bottom: 110px;
+      z-index: 10;
+      display: flex;
+      .swiper-page-controler {
+        position: relative;
+        display: flex;
+        button {
+          display: inline-flex;
+          width: 28px;
+          height: 28px;
+          border-radius: 3px;
+          box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+          border-color: #ffffff;
+          background-color: #fff;
+          opacity: 0.8;
+          align-items: center;
+          justify-content: center;
+          color: #1e1e1e;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .swiper-next {
+          margin-left: 4px;
+        }
+      }
+    }
+    .swiper-pagination {
+      position: absolute;
+      bottom: 100px;
+      .swiper-pagination-bullet {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background-color: hsla(0, 0%, 100%, 0.48);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+      .swiper-pagination-bullet-active {
+        width: 32px;
+        background-color: #fff;
+      }
+    }
+  }
+}
+.company {
+  height: 96px;
+  padding: 64px 0 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 20px;
+    color: #000a12;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .company-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      filter: grayscale(1);
+      margin: 0 15px 20px;
     }
   }
 }

@@ -101,3 +101,16 @@ var review_Swiper = new Swiper(".review-banner .swiper-container", {
   slidesPerGroup: 1,
   loopAdditionalSlides: 1,
 });
+
+var donate_Swiper = new Swiper(".donate .swiper-container", {
+  pagination: {
+    el: ".donate .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    prevEl: ".donate .swiper-prev",
+    nextEl: ".donate .swiper-next",
+  },
+  slidesPerView: 1,
+  centeredSlides: true,
+});
