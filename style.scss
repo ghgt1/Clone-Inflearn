@@ -958,3 +958,97 @@ nav {
     }
   }
 }
+footer {
+  height: 438px;
+  background-color: #303740;
+  .shortcut-container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    .contents-wrapper {
+      margin-right: 20px;
+      .title h1 {
+        color: #eeeeee;
+        font-size: 14px;
+        padding: 16px 0;
+        line-height: 1.43;
+        font-weight: 700;
+      }
+      .description {
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+          margin-bottom: 7px;
+          color: #bdbdbd;
+          font-size: 14px;
+          line-height: 1.43;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .copyright-container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    display: flex;
+    justify-content: space-between;
+    .left-container {
+      .copyright-title {
+        display: flex;
+        margin-bottom: 8px;
+        a {
+          path {
+            fill: $inflearn-color;
+          }
+        }
+        .divider {
+          position: relative;
+          top: 2.5px;
+          margin: 0 8px;
+          width: 0.5px;
+          height: 12px;
+          background-color: #bdbdbd;
+        }
+        .text {
+          color: #bdbdbd;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 1.5;
+          text-decoration: none;
+        }
+      }
+      .copyright-description,
+      .copyright-reserved {
+        margin-bottom: 8px;
+        span {
+          font-size: 12px;
+          color: #bdbdbd;
+          line-height: 1.5;
+        }
+      }
+    }
+    .right-container {
+      width: 260px;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        border-radius: 100%;
+        background: #bdbdbd;
+        text-align: center;
+        line-height: 35px;
+        color: #333333;
+      }
+    }
+  }
+}
