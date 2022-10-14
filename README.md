@@ -1,35 +1,28 @@
 # 📌 자신이 원하는 사이트 레이아웃 클론
 
-- 과제 기한:
-  - 과제 수행 기간: 2022년 09월 28일(수) ~ 2022년 10월 19일(수)
-  - 코드 리뷰 기간: 2022년 10월 19일(수) ~ 2022년 10월 26일(수)
-- 내용:
-  - 원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-  - 평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
+[패스트캠퍼스]메가바이트스쿨에서 진행한 원하는 웹사이트 레이아웃 클론 프로젝트입니다.
 
-## 필수 요구사항
+## 실제사이트 and 클론사이트
 
-- [ ] 설명이 포함된 README.md 파일을 제공하세요!
-- [ ] 결과와 비교할 수 있는 선택 사이트의 주소를 명시하세요!
-- [ ] 확인 가능한 HTML, CSS 파일 등이 모두 포함돼야 합니다!
-- [ ] 브라우저에서 정상적으로 출력돼야 합니다!
+저는 [인프런](https://www.inflearn.com/) 사이트를 클론하였습니다.
 
-## 선택 요구사항
+데모를 여기서 보실수 있습니다 [Demo](https://gilded-sorbet-e33272.netlify.app/)
 
-- [ ] 시멘틱 태그를 최대한 활용해보세요.
-- [ ] 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid를 활용해보세요.
-- [ ] BEM 방법론을 도입해보세요.
-- [ ] JS가 필요한 부분은 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- [ ] JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.
-- [ ] SCSS 등의 CSS 전처리도구를 도입해보세요.
-- [ ] SCSS 컴파일에 Webpack이나 Parcel 같은 번들러를 활용해보세요.
+## 기간
 
-## 이미지 추출법
+- 2022/09/30 ~ 2022/10/14
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 [Image Downloader](https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj?hl=ko)를 사용하세요.
+## 사용 기술 스택
 
-1. 원하는 사이트 접속
-1. Image Downloader 확장 프로그램 실행
-1. 다운로드 원하는 이미지 선택
-1. 서브 폴더 이름(Save to subfolder) 명시
-1. 다운로드!
+- Programming <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white">
+<img src="https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=SCSS&logoColor=white">
+<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=JAVASCRIPT&logoColor=white">
+
+- Deploy <img src="https://img.shields.io/badge/NETLIFY-00C7B7?style=for-the-badge&logo=NETLIFY&logoColor=white">
+
+## 피드백 받고싶은  부분
+
+- 레이아웃을 맞춰주기 위해 대부분의 단위를 px로 부여함. 그것때문인지 약간만 창의 크기를 조절하면 레이아웃이 무너짐.
+- 미디어 쿼리는 배제한 상태. 이 상태에서 최소한의 반응형 효과를 얻으려면 rm, rem, %값을 쓰면 해결이 가능한지?
+- html구조를 짤때 여려 겹의 container를 부여하는데, 이 container들엔 모두 크기를 부여해야하는지, 맞으면 어떤식으로 부여하는게좋은지?(max width인지 아니면 상속이되는지...)
+- container 크기의 상속과 단위값들을 어떻게 부여해야 약간의 반응형 효과를 얻을수있는지 궁금합니다.
