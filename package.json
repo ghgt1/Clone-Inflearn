@@ -1,7 +1,7 @@
 {
   "name": "kdt3-m1-inflearn",
   "version": "1.0.0",
-  "description": "",
+  "description": "[패스트캠퍼스]메가바이트스쿨에서 진행한 원하는 웹사이트 레이아웃 클론 프로젝트입니다.",
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
