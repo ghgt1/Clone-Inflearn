@@ -8,7 +8,7 @@
 
 저는 [인프런](https://www.inflearn.com/) 사이트를 클론하였습니다.
 
-데모를 여기서 보실수 있습니다 [Demo](jyroh-inflearn-clone.netlify.app/)
+데모를 여기서 보실수 있습니다 [Demo](https://jyroh-inflearn-clone.netlify.app)
 
 ## 설치법
 
