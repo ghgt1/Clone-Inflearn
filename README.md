@@ -2,11 +2,13 @@
 
 패스트캠퍼스에서 진행한 원하는 웹사이트 레이아웃 클론 프로젝트입니다.
 
+동료와 멘토로부터 코드리뷰를 받아 리팩토링(v0.2)을 진행하였습니다.
+
 ## 실제사이트 and 클론사이트
 
 저는 [인프런](https://www.inflearn.com/) 사이트를 클론하였습니다.
 
-데모를 여기서 보실수 있습니다 [Demo](https://635ea0a8307d445ff268fbe7--gilded-sorbet-e33272.netlify.app/)
+데모를 여기서 보실수 있습니다 [Demo](jyroh-inflearn-clone.netlify.app/)
 
 ## 설치법
 
