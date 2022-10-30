@@ -8,9 +8,20 @@
 
 데모를 여기서 보실수 있습니다 [Demo](https://gilded-sorbet-e33272.netlify.app/)
 
+## 설치법
+
+```shell
+$ git clone {주소복사}
+$ npm install
+$ npm init -y
+$ npm i -D parcel-bundler
+$ npm run dev
+```
+
 ## 기간
 
 - 2022/09/30 ~ 2022/10/14
+- 리팩토링: 2022/10/30 ~ 2022/10/31
 
 ## 사용 기술 스택
 
