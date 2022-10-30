@@ -1,4 +1,4 @@
-// 첫 header부분.
+// 아이콘들과 버전 변경.
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
 $inflearn-color: #00c471;
 body {
@@ -6,12 +6,10 @@ body {
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  // height: 1500px;
 }
-
+// 드롭다운 메뉴와 검색창, 로그인 회원가입
 header {
   height: 40px;
-  //   width: 100vw;
   display: flex;
   padding-left: 192px;
   border-bottom: 1px solid #f1f3f5;
@@ -69,11 +67,10 @@ header {
     }
   }
 }
-//nav바 부분
+//드롭다운메뉴
 nav {
   height: 64px;
   background-color: #fff;
-  // margin: 0 160px;
   padding-left: 192px;
   padding-right: 200px;
   display: flex;
@@ -85,7 +82,6 @@ nav {
   .left-container {
     display: flex;
     height: 100%;
-    // align-items: center;
     .brand-logo {
       display: flex;
       align-items: center;
@@ -154,6 +150,7 @@ nav {
       }
     }
   }
+  // 로그인 회원가입
   .right-container {
     display: flex;
     align-items: center;
@@ -210,20 +207,15 @@ nav {
   }
 }
 
-// swiper banner
+// 스와이퍼 배너
 .banner {
-  // position: relative;
-  // height: 320px;
-  // overflow: hidden;
   max-width: 100vw;
   overflow: hidden;
   .swiper-container {
     height: 320px;
     background-color: $inflearn-color;
     text-align: right;
-    // position: relative;
     left: 50%;
-    // margin-left: calc((100vw) / -2);
     font-size: 200px;
     .swiper-wrapper {
       img {
@@ -278,6 +270,7 @@ nav {
       }
     }
   }
+  // pagination 창. bullet까지 포함
   .pagination-container {
     position: relative;
     border-bottom: 1px solid #e9ecef;
@@ -367,6 +360,7 @@ nav {
     }
   }
 }
+// 중간 메인 검색창
 .search {
   .search-container {
     width: 100%;
@@ -413,7 +407,7 @@ nav {
   color: #50ad86;
 }
 
-//강의목록. 1. 무료강의
+//강의목록.
 .free-lecture,
 .easy-lecture,
 .roadmap,
@@ -654,6 +648,7 @@ nav {
     }
   }
 }
+// 로드맵
 .roadmap {
   height: 340.21px;
   .roadmap-container {
@@ -673,7 +668,7 @@ nav {
 .new-lecture {
   box-sizing: border-box;
 }
-// 하단 review banner
+// 실시간 리뷰 목록. 세로 swiper
 .review-banner {
   height: 480px;
   padding: 24px 0;
@@ -772,7 +767,7 @@ nav {
   }
 }
 
-//마지막 배너
+//비즈니스, 지식공유, 공고 swiper
 .donate {
   max-width: 100vw;
   height: 172px;
@@ -873,6 +868,7 @@ nav {
     }
   }
 }
+// 기업연계
 .company {
   height: 96px;
   padding: 64px 0 44px;
@@ -897,6 +893,7 @@ nav {
     }
   }
 }
+// 서비스 신청
 .service {
   height: 416.5px;
   padding: 48px 0;
@@ -960,6 +957,7 @@ nav {
     }
   }
 }
+// footer
 footer {
   height: 438px;
   background-color: #303740;
